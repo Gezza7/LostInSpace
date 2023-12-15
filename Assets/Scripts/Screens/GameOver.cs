@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
@@ -13,11 +14,13 @@ public class GameOver : MonoBehaviour
     }//Void Start
 
     // Update is called once per frame
-    void Update() { 
+    void Update()
+    {
 
     }//Void update
 
-    public void whenDead() {//show objects tagged with "whenDead"
+    public void whenDead()
+    {//show objects tagged with "whenDead"
         foreach (GameObject g in DeadPlayer)
         {
             g.SetActive(true);
@@ -34,7 +37,7 @@ public class GameOver : MonoBehaviour
 
     public void GameStats(string level)
     {//loads level
-        Application.LoadLevel("GameStats");
+        SceneManager.LoadScene(3);
     }//load level
 
 }//public class

@@ -25,11 +25,11 @@ public class controlerScript : MonoBehaviour
         float yStop = 1;
         float xStop = 1;
         
-        if (gameObject.transform.position.x > 8 && leftRightInput > 0) 
+        if (gameObject.transform.position.x > 9 && leftRightInput > 0) 
         { 
             xStop = 0;
         }
-         if(gameObject.transform.position.x < -8 && leftRightInput < 0)
+         if(gameObject.transform.position.x < -9 && leftRightInput < 0)
         {
             xStop = 0;
         }

@@ -24,9 +24,9 @@ public class EndStats : MonoBehaviour
 
     private void setUpText()
     {
-        score.text = ("score : " + gameData.getScore()).ToString();
-        kills.text = ("Kills : " + gameData.getKills()).ToString();
-        waves.text = ("Death Wave : " + gameData.getWave()).ToString();
-        shards.text = ("Nebula Shards : " + gameData.getShards()).ToString();
+        score.text = ("Score: " + gameData.getScore()).ToString();
+        kills.text = ("Kills: " + gameData.getKills()).ToString();
+        waves.text = ("Death Wave: " + gameData.getWave()).ToString();
+        shards.text = ("Nebula Shards: " + gameData.getShards()).ToString();
     }
 }

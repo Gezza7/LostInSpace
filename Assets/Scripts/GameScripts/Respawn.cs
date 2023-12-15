@@ -35,7 +35,7 @@ public class Respawn : MonoBehaviour
             else
             {
                 gameData = FindObjectOfType<GameData>();
-                gameData.score = GameObject.Find("GameLoop").GetComponent<Score>().getScore();
+                gameData.score = GameObject.Find("RespawnHandler").GetComponent<Score>().getScore();
                 gameData.enemiesKilled = GameObject.Find("WaveSpawner").GetComponent<WaveSpawner>().getEnemiesKilled();
                 gameData.waveNumber = GameObject.Find("WaveSpawner").GetComponent<WaveSpawner>().getWaves();
                 Application.LoadLevel("GameOver");

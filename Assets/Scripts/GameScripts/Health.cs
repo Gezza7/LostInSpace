@@ -21,13 +21,14 @@ public class Health : MonoBehaviour
             
             if(gameObject.tag == "Asteroid")
             {
-                GameObject.Find("GameLoop").GetComponent<Score>().updateScore(gameObject.GetComponent<AsteroidController>().getScore());
+                GameObject.Find("RespawnHandler").GetComponent<Score>().updateScore(gameObject.GetComponent<AsteroidController>().getScore());
                 
             }
             else if(gameObject.tag == "Enemy")
             {
                
-                GameObject.Find("GameLoop").GetComponent<Score>().updateScore(gameObject.GetComponent<EnemyFire>().getScore());
+                GameObject.Find("RespawnHandler").GetComponent<Score>().updateScore(gameObject.GetComponent<EnemyFire>().getScore());
+                GameObject.Find("WaveSpawner").GetComponent<WaveSpawner>().enemyKilled();
             }
             
             death();
@@ -40,5 +41,9 @@ public class Health : MonoBehaviour
     public void takeDamage(float damage)
     {
         health -= damage;
+    }
+    public void setHealth(float newHealth)
+    { 
+        health = newHealth; 
     }
 }

@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8fda08025fc1104f99263df1d4de6c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 4692664932914669172, guid: 95aa5543e72a691499af0de305122135, type: 3}
+  enemy: {fileID: 6106686831515584870, guid: e29264692aeabdf4b8d60255ca88d7f5, type: 3}
   nextWaveDelay: 3

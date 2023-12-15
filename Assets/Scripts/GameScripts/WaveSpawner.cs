@@ -29,18 +29,6 @@ public class WaveSpawner : MonoBehaviour
         {
             if(counter <= 0)
             {
-                if(wavecounter == 2)
-                {
-                    enemiesKilled++;
-                }
-                else if(wavecounter == 3)
-                {
-                    enemiesKilled += 3;
-                }
-                else
-                {
-                    enemiesKilled += 5;
-                }
                 spawnNextWave();
                 movmentStop = false;
             }
@@ -139,5 +127,9 @@ public class WaveSpawner : MonoBehaviour
     public int getWaves()
     {
         return wavecounter;
+    }
+    public void enemyKilled()
+    {
+        enemiesKilled++;
     }
 }

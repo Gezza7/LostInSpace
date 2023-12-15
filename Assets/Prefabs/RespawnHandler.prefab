@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 515458076224045281}
   - component: {fileID: 1441731943356979785}
+  - component: {fileID: 3417845971805241572}
   m_Layer: 0
   m_Name: RespawnHandler
   m_TagString: Untagged
@@ -47,3 +48,15 @@ MonoBehaviour:
   playerObject: {fileID: 3003583908325308018, guid: 2656e6911dcc5db4d87c3fd6d4c434fd, type: 3}
   respawnDelay: 5
   invicibleTimer: 3
+--- !u!114 &3417845971805241572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6999475646855698103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7352bfdfbf1f4c74196db277baf874b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

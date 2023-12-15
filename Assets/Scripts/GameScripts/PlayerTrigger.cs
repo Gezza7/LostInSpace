@@ -30,7 +30,11 @@ public class PlayerTrigger : MonoBehaviour
             {
                 Destroy(gameObject);
             }
-            
+            if (collision.gameObject.tag == "RepairKit") 
+            { 
+                gameObject.GetComponent<Health>().setHealth(100); 
+            }
+
             Destroy(collision.gameObject);
 
         }
